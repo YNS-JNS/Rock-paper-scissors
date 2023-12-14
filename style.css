@@ -95,9 +95,20 @@ section {
     font-size: 24px;
 }
 
-.intro-zone button,
-.competition button {
+.intro-zone button{
     width: 250px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    background: rgb(45, 117, 96);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.competition button {
+    width: 200px;
     height: 50px;
     background: none;
     border: none;
@@ -125,8 +136,10 @@ section {
 .hands-zone,
 .options-selected {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    /* flex-wrap: nowrap; */
+    /* align-content: center; */
 }
 
 .player-hand {
