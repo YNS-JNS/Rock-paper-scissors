@@ -5,6 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'Press Start 2p';
+            src: url('PressStart2P.ttf')
+        }
+
+        h1 {
+            font-family: 'Press Start 2p';
+
+        }
+
+        .container {
+            border: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+        }
+
+        input[type=text],
+        select {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'Press Start 2p';
+
+        }
+
+        /* Test  */
+        .intro-zone button {
+            border: none;
+            background-color: #191919;
+        }
+
+        .start-btn {
+            font-family: 'Press Start 2p';
+
+            text-align: center;
+            display: inline-block;
+            margin: 5px;
+            font-weight: bold;
+            /* padding: 10px 0 10px 10px; */
+            padding: 15px;
+            background-color: lightgray;
+            text-shadow: -1px -1px black, 1px 1px white;
+            color: gray;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -o-border-radius: 7px;
+            border-radius: 7px;
+            box-shadow: 0 .2em gray;
+            cursor: pointer;
+            width: 80px;
+            height: 50px;
+            font-size: 25px;
+
+        }
+
+        .start-btn:active {
+            box-shadow: none;
+            position: relative;
+            top: .2em;
+        }
+
+        .start-btn:hover {
+            background-color: darkgray;
+        }
+
+        /* test  */
+    </style>
 
 </head>
 
@@ -155,12 +230,16 @@
             </div>
             <div id="retrobg-groundShadow">
 
-                <h1>Hellp</h1>
+                <div class="container">
+                    <h1>ABTAL Digital, Welcome ...</h1>
+                    <input type="text" placeholder="Tape your name ...">
+                    <button class="start-btn"><a href="index.html" rel="noopener noreferrer">Go</a></button>
+                </div>
 
             </div>
         </div>
         <div>
-<script src="script.js"></script>
+            <script src="script.js"></script>
 </body>
 
 </html>

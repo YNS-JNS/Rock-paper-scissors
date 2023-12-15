@@ -15,12 +15,12 @@
             <!-- Score player zone  -->
             <div class="player-score-zone">
                 <h2 id="player-input">Player:</h2>
-                <p>0</p>
+                <p style="color: green;">0</p>
             </div>
             <!-- Score Robot zone  -->
             <div class="robot-score-zone">
                 <h2>Robot:</h2>
-                <p>0</p>
+                <p style="color: red;">0</p>
             </div>
         </div>
         <!-- --- -->
@@ -28,7 +28,9 @@
         <!-- Intro zone -->
         <div class="intro-zone">
             <h1>Let's enjoying [your name here]</h1>
-            <button>Start Play</button>
+            <!-- <button>Start Play</button> -->
+            <button id="audioControlButton"> <span class='start-btn'>Start Play</span> </button>
+
         </div>
         <!-- --- -->
 
@@ -46,9 +48,19 @@
             </div>
         </div>
         <!-- --- -->
+        <audio id="myAudio" controls autoplay>
+            <source src="./abtalDigital.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- <button id="audioControlButton">Toggle Audio</button> -->
+
+
     </section>
 
     <script src="app.js"></script>
+    <!-- Assurez-vous que votre site utilise HTTPS -->
+    <!-- <script src="https://votre_site.com/mon_script.js"></script> -->
+
 </body>
 
 </html>
